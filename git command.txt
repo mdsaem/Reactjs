@@ -1,0 +1,7 @@
+git init
+git config --global user.email md.saemhosain@gmail.com
+git add .
+git commit -m "adding files"
+$ git remote add origin https://github.com/mdsaem/Reactjs.git
+
+git push -u origin master .
