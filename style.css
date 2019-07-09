@@ -1,0 +1,29 @@
+.container{
+	margin: 10px;
+	background: lightcoral;
+	border-radius: 10px;
+	border: 2px solid green;
+	text-align: center
+}
+  .mainContainer{
+	margin:  0 auto; 
+	font-size: 12px;
+	padding: 2px;
+	color: blue;
+  }
+  .button{
+  	margin: auto;
+  	padding: 0px;
+  	font-size: 12px;
+  	top: 2px;
+  	left: 2px;
+  	right: 2px;
+  }
+  .edit{
+  	background-color: lightsteelblue;
+  	margin-right: 13px;
+
+  }
+  .delete{
+  	background-color: red;
+  }
