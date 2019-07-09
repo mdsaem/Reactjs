@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    
+  
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      class HotNews extends React.Component {
+        render() {
+        return (
+                 <div>
+
+                <h1>World Cup Play Very Soon</h1>
+                <img src="http://paloimages.prothom-alo.com/contents/cache/images/640x359x1/uploads/media/2019/07/08/da7eb14c8d47ac75f29b35cd7dd6afa9-5d2313f4a0b3b.jpg?jadewits_media_id=1453700"/>
+             </div>
+        )
+    }
+  }
+
+        ReactDOM.render(
+        < HotNews />
+       ,
+        document.getElementById('root')
+      );
+
+    </script>
+
+  </body>
+</html>
