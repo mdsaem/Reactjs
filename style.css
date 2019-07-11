@@ -5,9 +5,9 @@
 	border: 2px solid green;
 	text-align: center
 }
-  .mainContainer{
+  .newsContainer{
 	margin:  0 auto; 
-	font-size: 12px;
+	font-size: 24px;
 	padding: 2px;
 	color: blue;
   }

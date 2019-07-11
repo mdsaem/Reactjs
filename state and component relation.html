@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>    
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    <div id="root"></div>    
+    <script type="text/babel">
+
+      function Title(props){
+      
+      return(
+      <div>
+         <h1>{props.title}</h1>
+         <p>Edited:{props.count}</p>
+         </div>
+      )
+
+    }
+  class HotNews extends React.Component {
+
+      constructor(props){
+      super(props);
+      this.state={
+      totalEditCount:0
+    };
+
+    }
+
+   edit(){
+      alert("Please click edit button")
+        this.setState({
+        totalEditCount: this.state.totalEditCount + 1
+      });
+     }
+
+  delete(){
+   alert("Please Click Here")
+ }
+     render(){
+     const props=this.props
+     const totalEditCount=this.state.totalEditCount
+     return(
+      <div className="mainContainer">
+        <Title title={props.totle} count={totalEditCount}/>
+        <p1>{props.children}</p1>
+        <div className="action">
+          <button className="edit" onClick={ () =>this.edit()}>Edited</button>
+          <button className="Delete" onClick={this.delete}>Deleted</button>
+        </div>
+        {!!totalEditCount && (<p>Total Edit Click Is : {totalEditCount}</p>)}
+      </div>
+
+     )
+   }
+    }
+            
+      ReactDOM.render(
+       <div className="container">
+         <HotNews title="News1">Messi Again Play For Argentina.</HotNews>
+         <HotNews title="News2"> Messi Is the Best Player In The World..Carlos Puyel</HotNews>
+
+       </div>
+      ,
+        document.getElementById('root')
+      );
+    </script>    
+  </body>
+</html>
